@@ -1,0 +1,12 @@
+Mèo lây Covid-19 từ chủ.
+Con mèo nhiễm nCoV sau khi chủ của nó trở về từ Italy, trở thành ca truyền nCoV từ người sang mèo đầu tiên được ghi nhận trên thế giới.
+
+Cơ quan Y tế công cộng, An toàn thực phẩm và Môi trường Bỉ hôm 27/3 thông báo một con mèo nhà ở nước này nhiễm Covid-19. Một tuần sau khi người chủ trở về từ chuyến du lịch tới miền bắc Italy và nhiễm Covid-19, con mèo phát triển các triệu chứng về hô hấp, tiêu chảy, nôn mửa, theo Steven Van Gucht, nhà vi trùng học kiêm phát ngôn viên chính phủ.
+
+Người chủ gửi mẫu dịch vị lúc nôn và mẫu phân của con mèo tới phòng thí nghiệm của tiến sĩ Daniel Desmecht ở Khoa Thú y của Đại học Liège. Xét nghiệm gene phát hiện lượng virus cao trong các mẫu bệnh phẩm. Van Gucht cho biết con mèo hồi phục sau 9 ngày.
+
+Mèo và người dường như có một điểm chung trên bề mặt tế bào hô hấp, đó là vị trí mà nCoV dùng để xâm nhập. Ở người, các nhà khoa học xác định nCoV gắn vào protein thụ thể mang tên ACE2 nằm ở bên ngoài tế bào hô hấp. Sau khi xâm nhập, virus điều khiển cỗ máy bên trong tế bào để nhân lên. Protein ACE2 của mèo rất giống ACE2 của người, Van Gucht nói.
+
+Trong dịch SARS năm 2003, nhà chức trách cũng phát hiện những con mèo nhiễm virus corona. Loài vật nuôi khác nhiễm nCoV từ chủ là hai con chó ở Hong Kong. Con chó đầu tiên là một con phốc sóc 17 tuổi dương tính yếu với nCoV hồi cuối tháng 2/2020. Con chó chết vào giữa tháng 3/2020. Nhà chức trách không biết nguyên nhân chính xác dẫn tới cái chết của nó do người chủ không đồng ý khám nghiệm. Con chó thứ hai thuộc giống chó chăn cừu Đức có kết quả dương tính nhưng không bộc lộ triệu chứng.
+
+Hiện nay, chưa có báo cáo về vật nuôi truyền virus sang chủ. Van Gucht nhấn mạnh lây nhiễm giữa người và vật nuôi không phải con đường phát tán virus chính. Để xác định chắc chắn con mèo nhiễm nCoV, các nhà khoa học sẽ cần xét nghiệm máu để tìm kháng thể đặc hiệu đối với nCoV. Họ sẽ tiến hành xét nghiệm sau khi con mèo hết thời gian cách ly.
