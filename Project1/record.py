@@ -7,7 +7,7 @@ import wave
 import os
 
 
-class RecAUD:
+class Application:
     FILE_NAME = "X.wav"
 
     def __init__(self, chunk=3024, frmat=pyaudio.paInt16, channels=2, rate=44100, py=pyaudio.PyAudio()):
@@ -43,6 +43,10 @@ class RecAUD:
         self.record_text = Text(self.buttons, width=75, height=20)
         self.record_text.grid(row=0, column=1, padx=20, pady=5)
 
+        # Show statement
+        self.statement = Label(self.buttons, text="", padx=10, pady=5)
+        self.statement.grid(row=1, column=1, padx=10, pady=5)
+
         # Create title list
         choices = []
         mypath = './Records/'
@@ -66,6 +70,7 @@ class RecAUD:
     def start_record(self):
         self.st = 1
         self.frames = []
+        self.statement['text'] = 'Đang ghi âm'
         stream = self.p.open(format=self.FORMAT, channels=self.CHANNELS, rate=self.RATE, input=True,
                              frames_per_buffer=self.CHUNK)
         while self.st == 1:
@@ -76,7 +81,7 @@ class RecAUD:
 
         stream.close()
 
-        wf = wave.open(self.FILE_NAME + str(self.sentence_len-1) + '.wav', 'wb')
+        wf = wave.open(self.FILE_NAME + str(self.sentence_len - 1) + '.wav', 'wb')
         wf.setnchannels(self.CHANNELS)
         wf.setsampwidth(self.p.get_sample_size(self.FORMAT))
         wf.setframerate(self.RATE)
@@ -85,6 +90,7 @@ class RecAUD:
 
     def stop(self):
         self.st = 0
+        self.statement['text'] = 'Dừng ghi âm'
         print("* stop recording")
         f = open(self.FILE_NAME + "link.txt", "a", encoding="utf8")
         f.write(str(self.sentence_len) + '.wav' + '\n')
@@ -104,10 +110,10 @@ class RecAUD:
         file = open(file_doc, "r", encoding="utf8")
         doc_list = [line for line in file]
         docstr = ''.join(doc_list)
-        self.sentences = re.split(r'[.!?]', docstr)
+        self.sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s', docstr)
         ss = []
         for s in self.sentences:
-            ss.append(s.strip().replace('\n',''))
+            ss.append(s.strip().replace('\n', ''))
         self.sentences = ss
         self.sentence_len = 0
         self.num_sen = self.sentences.__len__()
@@ -120,4 +126,4 @@ class RecAUD:
 
 
 # Create an object of the ProgramGUI class to begin the program.
-guiAUD = RecAUD()
+app = Application()
